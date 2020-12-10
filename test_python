@@ -6,7 +6,7 @@ from tkinter import ttk
 from tkinter import *
 
 root = Tk()
-'''
+
 root.title('first GUI using Python')
 ttk.Button(root, text="Hello Team!!").grid()
 root.mainloop()
@@ -40,7 +40,7 @@ Label(root,text="Name").grid(row=0, column=0, sticky=N)
 Entry(root, width=50).grid(row=0,column=1)
 Button(root, text="submit").grid(row=0,column=5)
 root.mainloop()
-'''
+
 Label(root,text="Name").grid(row=0, column=0, sticky=N)
 Entry(root, width=10).grid(row=0,column=1)
 Button(root, text="submit").grid(row=0,column=2)
@@ -56,9 +56,6 @@ Checkbutton(root,text="Flask").grid(row=3,column=3,sticky=N)
 
 root.mainloop()
 
-
-
-'''
 name = input("enter your name : ")
 age = input("enter your age : ")
 print("hello " + name + " ! you are " + age)
@@ -67,4 +64,4 @@ num1 = input("enter a number: ")
 num2 = input("enter another number: ")
 result = int(num1) + int(num2)
 print(result)
-'''
+
