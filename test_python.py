@@ -1,45 +1,44 @@
 import tkinter
-
-
 from tkinter import Tk
 from tkinter import ttk
 from tkinter import *
 
 root = Tk()
-
-root.title('first GUI using Python')
+root.geometry("300x300")
+root.title('First GUI using Python')
 ttk.Button(root, text="Hello Team!!").grid()
-root.mainloop()
 
-frame= Frame(root)
+
+frame1=Frame(root)
+
 labelText= StringVar()
 
-label= Label(frame, textvariable=labelText)
-button= Button(frame, text='Hey')
+label= Label(frame1, textvariable=labelText)
+button= Button(frame1, text='Hey')
 labelText.set("hey whatsup!!")
 
 label.pack()
 button.pack()
-frame.pack()
+frame1.grid()
 
-root.mainloop()
+
 
 #tkinter._test()
 
-frame=Frame(root)
-Label(frame,text='hey').pack()
-Button(frame,text='B1').pack(side=LEFT,fill=Y)
-Button(frame,text='B1').pack(side=RIGHT,fill=X)
-Button(frame,text='B1').pack(side=TOP,fill=Y)
-Button(frame,text='B1').pack(side=BOTTOM,fill=X)
-frame.pack()
-root.mainloop()
+frame2=Frame(root)
+Label(frame2,text='hey').pack()
+Button(frame2,text='B1').pack(side=LEFT,fill=Y)
+Button(frame2,text='B1').pack(side=RIGHT,fill=X)
+Button(frame2,text='B1').pack(side=TOP,fill=Y)
+Button(frame2,text='B1').pack(side=BOTTOM,fill=X)
+frame2.grid()
+
 
 
 Label(root,text="Name").grid(row=0, column=0, sticky=N)
 Entry(root, width=50).grid(row=0,column=1)
 Button(root, text="submit").grid(row=0,column=5)
-root.mainloop()
+
 
 Label(root,text="Name").grid(row=0, column=0, sticky=N)
 Entry(root, width=10).grid(row=0,column=1)
@@ -54,7 +53,7 @@ Checkbutton(root,text="Dango").grid(row=3,column=2,sticky=N)
 Checkbutton(root,text="Flask").grid(row=3,column=3,sticky=N)
 
 
-root.mainloop()
+
 
 name = input("enter your name : ")
 age = input("enter your age : ")
@@ -65,4 +64,5 @@ num2 = input("enter another number: ")
 result = int(num1) + int(num2)
 print(result)
 
-thankyou
+
+root.mainloop()
